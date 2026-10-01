@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1d1b17; --muted:#5d5950; --line:#e2ded6; --accent:#8a5a2b; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#161513; --fg:#f0ece4; --muted:#a8a296; --line:#2e2b26; --accent:#d8a06a; }
+  }
+  :root[data-theme="dark"] { --bg:#161513; --fg:#f0ece4; --muted:#a8a296; --line:#2e2b26; --accent:#d8a06a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width:680px; margin:0 auto; padding:64px 16px 80px; }
+  h1 { font-size:1.8rem; line-height:1.2; margin:0 0 .2em; letter-spacing:-.01em; }
+  .date { color:var(--muted); font-size:.9rem; margin:0 0 2.2em; }
+  h2 { font-size:1.05rem; margin:2.2em 0 .5em; }
+  p, li { color:var(--muted); }
+  p { margin:0 0 1em; }
+  ul { padding-left:1.2em; }
+  li { margin:.35em 0; }
+  a { color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+  a:hover { border-bottom-color:var(--accent); }
+  nav { margin-top:3em; padding-top:1.5em; border-top:1px solid var(--line); font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Política de privacidad</h1>
+  <p class="date">Última actualización: 30 de septiembre de 2026</p>
+
+  <p>Esta política describe cómo la aplicación <strong>Mi correo con Claude</strong> trata los datos a los que accede. La aplicación es una herramienta personal de un solo usuario, ejecutada localmente en el computador de su autor.</p>
+
+  <h2>Quién es el responsable</h2>
+  <p>Mauricio Gutiérrez, persona natural. Contacto: magutier73@gmail.com</p>
+
+  <h2>A qué datos accede la aplicación</h2>
+  <p>Con la autorización explícita del usuario mediante OAuth 2.0 de Google, la aplicación puede acceder a:</p>
+  <ul>
+    <li>Mensajes, etiquetas y configuración básica de Gmail</li>
+    <li>Eventos de Google Calendar</li>
+    <li>Archivos de Google Drive</li>
+    <li>Contenido de documentos de Google Docs y hojas de Google Sheets</li>
+    <li>La dirección de correo asociada a la cuenta, para identificar la sesión</li>
+  </ul>
+  <p>El único usuario cuyos datos se procesan es el propio autor de la aplicación, sobre su propia cuenta de Google.</p>
+
+  <h2>Para qué se usan</h2>
+  <p>Exclusivamente para ejecutar las acciones que el usuario solicita en el momento: leer o enviar un correo, consultar o crear un evento, abrir o modificar un archivo. No se usan para publicidad, perfilado, analítica ni para entrenar modelos de inteligencia artificial.</p>
+
+  <h2>Dónde se almacenan</h2>
+  <p>La aplicación no opera servidores propios ni bases de datos remotas. El único dato que se guarda de forma persistente es el token de acceso de Google, almacenado en el computador local del usuario para no tener que autorizar la aplicación en cada ejecución. El contenido de correos, archivos y eventos se mantiene en memoria durante la ejecución y no se conserva después.</p>
+
+  <h2>Con quién se comparten</h2>
+  <p>Con nadie. No se venden, alquilan ni transfieren datos a terceros. La comunicación ocurre únicamente entre el computador del usuario y los servidores de Google.</p>
+  <p>Cuando el usuario utiliza la aplicación junto con un asistente de inteligencia artificial, el contenido que el usuario decide enviarle se procesa conforme a las políticas de privacidad de ese proveedor. Esa transmisión solo ocurre por acción deliberada del usuario.</p>
+
+  <h2>Uso limitado de los datos de Google</h2>
+  <p>El uso que esta aplicación hace de la información recibida de las APIs de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos sus requisitos de Uso Limitado.</p>
+
+  <h2>Cómo revocar el acceso</h2>
+  <p>El usuario puede retirar la autorización en cualquier momento desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">la página de permisos de su cuenta de Google</a>. Al hacerlo, el token almacenado deja de ser válido de inmediato. Borrar el archivo del token en el computador local tiene el mismo efecto.</p>
+
+  <h2>Seguridad</h2>
+  <p>Las credenciales y el token se guardan en el sistema de archivos del computador del usuario y quedan protegidos por los controles de acceso de ese equipo. Toda la comunicación con Google ocurre sobre HTTPS.</p>
+
+  <h2>Menores de edad</h2>
+  <p>La aplicación no está dirigida a menores de edad ni recoge datos de ellos.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, la nueva versión se publicará en esta misma página con su fecha de actualización.</p>
+
+  <nav><a href="index.html">Inicio</a> &nbsp;·&nbsp; <a href="terminos.html">Términos del servicio</a></nav>
+</div>
+</body>
+</html>

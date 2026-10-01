@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi correo con Claude</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1d1b17; --muted:#5d5950; --line:#e2ded6; --accent:#8a5a2b; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#16151300; --bg:#161513; --fg:#f0ece4; --muted:#a8a296; --line:#2e2b26; --accent:#d8a06a; }
+  }
+  :root[data-theme="dark"] { --bg:#161513; --fg:#f0ece4; --muted:#a8a296; --line:#2e2b26; --accent:#d8a06a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width:680px; margin:0 auto; padding:64px 16px 80px; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .4em; letter-spacing:-.01em; }
+  h2 { font-size:1.1rem; margin:2.4em 0 .6em; }
+  p { color:var(--muted); margin:0 0 1em; }
+  .lead { color:var(--fg); font-size:1.08rem; }
+  ul { color:var(--muted); padding-left:1.2em; }
+  li { margin:.35em 0; }
+  nav { margin-top:2.5em; padding-top:1.5em; border-top:1px solid var(--line); }
+  a { color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+  a:hover { border-bottom-color: var(--accent); }
+  footer { margin-top:3em; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Mi correo con Claude</h1>
+  <p class="lead">Una herramienta personal, de uso privado, que permite a un programa en mi propio computador leer y gestionar mi correo, mi calendario y mis archivos de Google.</p>
+
+  <h2>Qué hace</h2>
+  <p>El programa se conecta a mi cuenta de Google mediante OAuth 2.0 y utiliza las APIs oficiales de Google para:</p>
+  <ul>
+    <li>Leer, organizar, redactar y enviar correos en Gmail</li>
+    <li>Consultar y crear eventos en Google Calendar</li>
+    <li>Abrir y guardar archivos en Google Drive</li>
+    <li>Leer y editar documentos de Google Docs y hojas de Google Sheets</li>
+  </ul>
+
+  <h2>Para quién es</h2>
+  <p>No es un servicio público ni un producto comercial. Es una aplicación de escritorio de un solo usuario: su autor. No hay registro, no hay cuentas de terceros y no se ofrece a otras personas.</p>
+
+  <h2>Dónde se ejecuta</h2>
+  <p>Todo corre localmente en mi computador. No existe ningún servidor intermedio: el programa habla directamente con los servidores de Google.</p>
+
+  <nav>
+    <a href="privacidad.html">Política de privacidad</a> &nbsp;·&nbsp;
+    <a href="terminos.html">Términos del servicio</a>
+  </nav>
+
+  <footer>Proyecto personal. Contacto: magutier73@gmail.com</footer>
+</div>
+</body>
+</html>
